@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="des_x" />
+    <arg name="des_y" />
+    <param name="des_pos_x" value="$(arg des_x)" />
+    <param name="des_pos_y" value="$(arg des_y)" />
+    <node pkg="robot_description" type="wall_follow_service.py" name="wall_follower" output="screen" />
+    <node pkg="robot_description" type="go_to_point_service.py" name="go_to_point" output="screen" />
+    <node pkg="robot_description" type="bug.py" name="bug" output="screen" />
+</launch>
