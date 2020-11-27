@@ -125,6 +125,8 @@ def main():
             desired_yaw = math.atan2(
                 desired_position_.y - position_.y, desired_position_.x - position_.x)
             err_yaw = normalize_angle(desired_yaw - yaw_)
+            err_pos = math.sqrt(pow(desired_position_.y - position_.y,
+                                    2) + pow(desired_position_.x - position_.x, 2))
 
             if(err_pos < 0.3):
                 change_state(2)
