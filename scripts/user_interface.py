@@ -9,8 +9,8 @@ from std_srvs.srv import *
 
 def set_new_pos(req):
     print("Target reached! Please insert a new position")
-    x = float(raw_input('x :'))
-    y = float(raw_input('y :'))
+    x = float(input('x :'))
+    y = float(input('y :'))
     rospy.set_param("des_pos_x", x)
     rospy.set_param("des_pos_y", y)
     print("Thanks! Let's reach the next position")

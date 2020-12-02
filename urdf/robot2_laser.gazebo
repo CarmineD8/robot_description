@@ -18,8 +18,8 @@
       <legacyMode>true</legacyMode>
       <alwaysOn>true</alwaysOn>
       <updateRate>20</updateRate>
-      <leftJoint>joint_left_wheel</leftJoint>
-      <rightJoint>joint_right_wheel</rightJoint>
+      <leftJoint>joint_right_wheel</leftJoint>
+      <rightJoint>joint_left_wheel</rightJoint>
       <wheelSeparation>0.2</wheelSeparation>
       <wheelDiameter>0.2</wheelDiameter>
       <torque>0.1</torque>

@@ -89,6 +89,7 @@ def normalize_angle(angle):
 
 
 def main():
+    time.sleep(2)
     global regions_, position_, desired_position_, state_, yaw_, yaw_error_allowed_
     global srv_client_go_to_point_, srv_client_wall_follower_, srv_client_user_interface_, pub
 
